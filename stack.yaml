@@ -15,6 +15,7 @@ packages:
 
 docker:
     enable: true
+    run-args: ["--net=bridge", "--publish=3000:3000"]
 
 # Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)
 extra-deps: [ 'test-framework-quickcheck-0.3.0'
